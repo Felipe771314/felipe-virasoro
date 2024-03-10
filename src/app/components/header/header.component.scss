@@ -1,0 +1,42 @@
+.switch-button {
+  display: inline-block;
+  margin-right: 10px; /* Ajusta el margen si es necesario */
+}
+
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+
+.switch-button .switch-button__label {
+  background-color: rgb(255, 255, 255);
+  width: 4rem;
+  height: 2rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+
+
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #42474b;
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px #343a40;
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: #343a40;
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(2rem);
+  background-color: rgb(255, 255, 255);
+}
+.dropdown-menu {
+z-index: 1000!important;
+}
