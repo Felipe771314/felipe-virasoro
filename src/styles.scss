@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+// Variables para el tema oscuro
+
+$dark-background-color: #343a40;
+$dark-text-color: #ffffff;
+
+// Variables para el tema claro
+$light-background-color: #ffffff;
+$light-text-color: #343a40;
+
+// Estilos para el tema oscuro
+[data-bs-theme="dark"] {
+  background-color: $dark-background-color;
+  color: $dark-text-color;
+}
+
+// Estilos para el tema claro
+[data-bs-theme="light"] {
+  background-color: $light-background-color;
+  color: $light-text-color;
+}
